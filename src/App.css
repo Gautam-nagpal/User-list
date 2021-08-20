@@ -12,7 +12,9 @@
 .d-flex{
   display: flex;
 }
-
+.d-block{
+  display: block !important;
+}
 .jc-center{
   justify-content: center;
 }
@@ -20,6 +22,10 @@
   color: red;
   margin: 0;
   padding-bottom : 5px;
+}
+
+.main_container{
+  display: block;
 }
 
 @media (prefers-reduced-motion: no-preference) {

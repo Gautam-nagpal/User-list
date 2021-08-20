@@ -1,4 +1,4 @@
-import { Grid, Typography } from "@material-ui/core";
+import { Button, Grid, Typography } from "@material-ui/core";
 import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
 import TableCell from '@material-ui/core/TableCell';
@@ -28,12 +28,16 @@ export default function Users(props) {
         dispatch(userAction.updateUserList(updatedUserList))
     }
 
+    const addUser = () => {
+        dispatch(userAction.openCustomModalDialog({}, "UserForm"))
+    }
 
     return (
         <Grid item xs={12}>
             <Grid container>
                 <Grid item={12}>
                     <Typography>User List</Typography>
+                    <Button variant="contained" color="primary"  onClick={() => { addUser() }}>Add User</Button>
                 </Grid>
 
                 <Grid item xs={12}>

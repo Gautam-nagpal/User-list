@@ -22,7 +22,7 @@ export default function Homepage(props) {
 
     return (
         <Grid item xs={12}>
-            <Grid container>
+            <Grid container className="d-block">
                 <Grid item={12} onClick={() => { changeRoute() }}>
                     GO to USer List
                 </Grid>
